@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Online</title>
+    <link rel="stylesheet" href="./src/assets/css/ui--kit.css">
+    <link rel="stylesheet" href="./src/assets/css/style.css">
+</head>
+
+<body>
+    <div class="flex flex--direction--row container">
+
+        <!-- BARRA LATERAL (ESQUERDA) -->
+        <div class="flex flex--direction--column flex--1 left--bar">
+
+            <!-- MENU (PARTE DE CIMA) -->
+            <div class="flex flex--direction--row menu">
+
+                <!-- Ícone Menu -->
+                <div class="flex justify--content--center align--items--center flex--1">
+                    <img src="./src/assets/icons/menu.svg" alt="Ícone Menu">
+                </div>
+
+                <!-- Barra Search -->
+                <div class=" flex justify--content--center align--items--center flex--5 search">
+                    <div class="flex align--items--center  background--light--grey div--search">
+                        <img src="./src/assets/icons/search.svg" alt="Ícone Search">
+                        <input type="search" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONVERSAS (PARTE DE BAIXO) -->
+            <div class="flex flex--direction--column div--contacts">
+
+                <!-- CONVERSA 1 (ChatGram) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/ChatGram.png" alt="Foto ChatGram">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">ChatGram</div>
+                            <img src="./src/assets/icons/verified.svg" alt="Ícone Verificado">
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">ChatGram Web Was Updated.</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">23:59</div>
+
+                        <!-- Notificação -->
+                        <div
+                            class=" flex justify--content--center align--items--center quantity--not--viewed--messages background--green">
+                            1</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 2 (Ricardo) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/Ricardo.png" alt="Foto Ricardo">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Rico Yeaguer</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">Já tomei o remédio ff</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">23:35</div>
+
+                        <!-- Notificação -->
+                        <div
+                            class=" flex justify--content--center align--items--center quantity--not--viewed--messages background--green">
+                            2</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 3 (David) -->
+                <div class="flex area--contact background--light--grey">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/David.png" alt="Foto David">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">David Moore</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">You: i don't remember anything 😄</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">18:16</div>
+                    </div>
+
+                </div>
+
+                <!-- CONVERSA 4 (Greg) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/Greg.png" alt="Foto Greg">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Greg James</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">I got a job at SpaceX🎉🚀</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">18:02</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 5 (Emily) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/Emily.png" alt="Foto Emily">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Emily Dorson</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">Table for four, 5PM. Be there.</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">17:42</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 6 (Office) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/Office.png" alt="Foto Office">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Office Chat</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message"><b>Lewis:</b> All done mate 😆</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">17:08</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 7 (Announcements) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/Announcements.png"
+                            alt="Foto Announcements">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Announcements</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">Channel created</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">16:15</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 8 (Little Sister) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/LittleSister.png"
+                            alt="Foto Little Sister">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Little Sister</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message">Tell mom i will be home for tea 💜</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">Wed</div>
+                    </div>
+                </div>
+
+                <!-- CONVERSA 9 (Art Class) -->
+                <div class="flex area--contact">
+                    <!-- Foto Conversa -->
+                    <div class="flex justify--content--center align--items--center flex--1">
+                        <img class="avatar--left--bar" src="./src/assets/images/ArtClass.png" alt="Foto Art Class">
+                    </div>
+
+                    <!-- Informações Contato -->
+                    <div class="flex flex--direction--column justify--content--center flex--3">
+                        <!-- Nome Contato -->
+                        <div class="flex align--items--center infos--contact">
+                            <div class="font--family font--weight--bold">Art Class</div>
+                        </div>
+
+                        <!-- Ultima Mensagem -->
+                        <div class="last--message"><b>Emily:</b> Editorial</div>
+                    </div>
+
+                    <!-- Horário e Notificação -->
+                    <div
+                        class="flex flex--direction--column justify--content--center align--items--end flex--1 div--last--messages--info">
+                        <!-- Horário -->
+                        <div class="hour--last--message">Tue</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CHAT (DIREITA) -->
+        <div class="flex flex--direction--column align--items--start flex--3-5">
+
+            <!-- Dados do Contato -->
+            <div class="flex flex--direction--row align--items--center side--bar">
+                <!-- Foto do Contato -->
+                <div class="flex flex--direction--row justify--content--center flex--1 avatar--top--bar">
+                    <img src="./src/assets/images/David.png" alt="Foto David">
+                </div>
+
+                <!-- Nome do Contato -->
+                <div class="flex flex--direction--column flex--13">
+
+                    <div class="contact--name">David Moore</div>
+
+                    <div class="contact--status">Last seen 5 mins ago</div>
+                </div>
+
+                <!-- Ícones do Contato -->
+                <div
+                    class="flex flex--direction--row justify--content--end align--items--center flex--3 div--sidebar--icons">
+                    <img src="./src/assets/icons/search.svg" alt="Icone Lupa">
+                    <img src="./src/assets/icons/phone.svg" alt="Icone Telefone">
+                    <img src="./src/assets/icons/more.svg" alt="Icone Mais">
+                </div>
+            </div>
+
+            <!-- Área das Mensagens-->
+            <div class="flex flex--direction--row background--messages">
+                <div class="flex flex--direction--column div--container--messages width--100">
+
+                    <!-- Mensagens e Data da Conversa-->
+                    <div class="flex flex--direction--column justify--content--end flex--6 width--100">
+
+                        <div
+                            class="flex flex--direction--column align--items--center justify--content--center width--100 div--messages">
+                            <!-- Data da Conversa-->
+                            <div class="flex date--chat justify--content--center align--items--center">Today</div>
+
+                            <!-- Mensagens-->
+                            <div class="flex flex--direction--row width--100 justify--content--start">
+                                <div class="flex flex--direction--column message other">
+                                    <div class="flex--6">
+                                        OMG 😯 do you remember what you did last night at the work night out?
+                                    </div>
+                                    <div
+                                        class="flex--1 flex flex--direction--row justify--content--end align--items--center font--size--12 infos--message">
+                                        <img src="./src/assets/icons/heart.svg" alt="Ícone Coração">
+                                        <div>18:12</div>
+                                        <img src="./src/assets/icons/viewed.svg" alt="Ícone Visualizado">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="flex flex--direction--row width--100 justify--content--end">
+                                <div class="flex flex--direction--column message you">
+                                    <div class="flex--6">
+                                        No Haha
+                                    </div>
+                                    <div
+                                        class="flex--1 flex flex--direction--row justify--content--end align--items--center font--size--12 infos--message">
+                                        <div>18:16</div>
+                                        <img src="./src/assets/icons/viewed.svg" alt="Ícone Visualizado">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex flex--direction--row width--100 justify--content--end">
+                                <div class="flex flex--direction--column message you">
+                                    <div class="flex--6">
+                                        I don't remember anything 😄
+                                    </div>
+                                    <div
+                                        class="flex--1 flex flex--direction--row justify--content--end align--items--center font--size--12 infos--message">
+                                        <div>18:16</div>
+                                        <img src="./src/assets/icons/viewed.svg" alt="Ícone Visualizado">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Campo de Texto-->
+                    <div class="flex flex--direction--row align--items--center flex--1">
+                        <div class="flex flex--direction--row div--text--field">
+                            <!-- Ícone Emojis-->
+                            <div class="flex justify--content--center align--items--center flex--1">
+                                <img src="./src/assets/icons/emoticons.svg" class="cursor--pointer"
+                                    alt="Ícone Emoticons">
+                            </div>
+
+                            <!-- Inserir Texto-->
+                            <div class="flex--13">
+                                <input type="text" class="text--field">
+                            </div>
+
+                            <!-- Botão enviar-->
+                            <div class="flex justify--content--center align--items--center flex--1">
+                                <img src="./src/assets/icons/send.svg" class="cursor--pointer" alt="Ícone Enviar">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
