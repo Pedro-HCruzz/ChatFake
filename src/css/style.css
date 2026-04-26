@@ -1,0 +1,279 @@
+/* IMPORTAÇÃO DE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* PALETA DE CORES e BODY */
+:root {
+  --bg-dark: #121212; /* Fundo extremo (mais escuro) */
+  --bg-panel: #181818; /* Fundo dos painéis e barras (lateral e topo) */
+  --bg-input: #202020; /* Fundo suave para os campos de digitação e busca */
+  --texto-principal: #E1E1E6; /* Off-white para não cansar a vista */
+  --texto-secundario: #A0A0A0; /* Cinza para horários, datas e placeholders */
+  --msg-enviada: #78000e; /* Vermelho vinho que combina com o background */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--texto-principal);
+    font-family: 'Inter', 'sans-serif';
+}
+
+
+/* ESTILOS DE AVATAR */
+.avatar--top--bar { 
+    width: 40px; 
+    height: 40px; 
+}
+.avatar--left--bar { 
+    width: 48px; 
+    height: 48px;
+}
+
+
+/* BARRA LATERAL (Lista de Conversas) */
+.left--bar { 
+    border: 1px solid var(--bg-input); 
+    background-color: var(--bg-panel);
+}
+
+.menu { height: 70px; }
+
+.search { padding-right: 20px; }
+
+.div--search { 
+    border-radius: 25px; 
+    padding: 10px; 
+    width: 100%;
+    background-color: var(--bg-input); 
+}
+
+/* Reset de estilos para o Input de Busca */
+.div--search input {
+    border: 0;
+    background: transparent;
+    outline: 0;
+    flex-grow: 1;
+    color: var(--bg-input);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Configuração de fonte para todos os inputs de texto */
+input[type="search"],
+input[type="text"] {
+    color: var(--texto-principal);
+    background: transparent; 
+}
+
+
+/* UTILITÁRIOS DE COR E TEXTO ESPECÍFICOS */
+.font--size--16 { font-size: 16px; }
+.font--size--14 { font-size: 14px; }
+.font--size--12 { font-size: 12px; }
+
+
+/* CARD DE CONTATO (Item da lista à esquerda) */
+.area--contact { 
+    height: 72px; 
+    padding-left: 5px; 
+    padding-right: 10px; 
+    cursor: pointer; 
+}
+
+/* Estilo ativado quando o contato é clicado (via JS) */
+.area--contact.active {
+    background-color: var(--bg-input);
+    border-left: 3px solid var(--msg-enviada);
+    transition: background-color 0.3s ease;
+}
+
+.div--contacts { margin-top: 10px; }
+
+.infos--contact { gap: 5px; }
+
+.last--message { 
+    color: var(--texto-secundario); 
+    font-size: 14px; 
+}
+.hour--last--message {  
+    font-size: 12px; 
+    color: var(--texto-secundario); 
+}
+
+
+/* ÁREA DO CHAT ATIVO (Topo e Fundo) */
+.side--bar { 
+    height: 70px; 
+    width: 100%; 
+    border-bottom: 1px solid var(--bg-input); 
+    overflow: hidden;
+    background-color: var(--bg-panel);
+}
+
+.contact--name {     
+    font-size: 16px; 
+    font-weight: bold; 
+}
+
+.contact--status { 
+    font-size: 14px; 
+    color: var(--texto-secundario); 
+}
+
+.div--sidebar--icons { 
+    padding-right: 20px; 
+    gap: 30px; 
+}
+
+/* Background estampado e escuro das mensagens */
+.background--messages {
+    background-image: url("../images/Background.png");
+    height: 100%;
+    width: 100%;
+}
+
+/* Padding lateral para forçar as mensagens pro meio da tela */
+.div--container--messages { 
+    padding-bottom: 20px; 
+    padding-left: 200px; 
+    padding-right: 200px; 
+}
+
+
+/* BALÕES DE MENSAGEM */
+.date--chat {
+    background-color: var(--bg-input); 
+    color: var(--texto-principal);
+    font-weight: bold; 
+    padding: 6px 16px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin: 15px auto;
+    width: max-content;
+}
+
+.div--messages {
+    gap: 10px;
+}
+
+/* Formatação base comum para qualquer bolha */
+.message { 
+    padding: 10px; 
+    border-radius: 12px; 
+    max-width: 400px; 
+    gap: 5px;
+    position: relative; 
+}
+
+.infos--message{
+    gap: 5px;
+}
+
+/* Cores específicas: Mensagem que o contato enviou para mim */
+.other { 
+    background-color: var(--bg-panel);
+    color: var(--texto-principal); 
+} 
+
+/* Cores específicas: Mensagem que eu enviei */
+.you { 
+    background-color: var(--msg-enviada);
+    color: var(--texto-principal); 
+}
+
+/* Classe dinâmica injetada pelo JS ao buscar uma palavra específica */
+.highlight {
+    background-color: #5C1616;
+    color: #FFFFFF; 
+    border-radius: 2px;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+
+/* REAÇÕES / EMOJIS */
+.emoji-opcao {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+/* O Menu flutuante que aparece ao clicar para reagir */
+.area-emojis {
+    display: flex;
+    gap: 5px;  
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    background-color: var(--bg-input);
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+}
+
+/* Se o menu for esvaziado pelo JS, o CSS esconde o fundo para não ficar um balão vazio */
+.area-emojis:empty {
+    display: none;
+}
+
+.emoji-opcao {
+    font-size: 20px;
+    transition: transform 0.2s ease;
+}
+
+.emoji-opcao:hover {
+    transform: scale(1.5)
+}
+
+/* Estilo do emoji final que fica grudado na bolha de mensagem */
+.emoji-selecionado {
+    position: absolute;
+    bottom: -10px; 
+    right: 5px;    
+    background-color: var(--bg-input); 
+    border-radius: 12px;
+    padding: 2px 6px;
+    font-size: 12px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); 
+    z-index: 10;
+}
+
+/* Animação suave para elementos que são carregados via JS */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+/* CAMPO DE ENTRADA DE TEXTO */
+.div--text--field { 
+    height: 56px; 
+    width: 100%; 
+    border-radius: 10px; 
+    background-color: var(--bg-input); 
+}
+
+.text--field { 
+    width: 100%; 
+    height: 100%; 
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+    font-size: 16px;
+    background-color: var(--bg-input); 
+}
+
+/* Esconde a área de digitação até o usuário abrir uma conversa */
+#area-input-mensagem {
+    display: none;
+}
